@@ -1,0 +1,107 @@
+/* Rubik Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat+Alternates:ital,wght@0,500;1,400&family=Montserrat+Subrayada&family=Montserrat:wght@300&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+/* Josephine Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat+Alternates:ital,wght@0,500;1,400&family=Montserrat+Subrayada&family=Montserrat:wght@300&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+/* Oxygen Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat+Alternates:ital,wght@0,500;1,400&family=Montserrat+Subrayada&family=Montserrat:wght@300&family=Nanum+Gothic:wght@800&family=Poppins:wght@700&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    /* Apply Oxygen Fonts*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    /* Apply Rubik Fonts*/
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+#background {
+    background-image: url();
+}
+
+#tombol {
+    height: 120px;
+    max-height: 150px;
+    width: 300px;
+}
+
+
+.toggle-btn {
+    height: 120px;
+    max-height: 120px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #858585;
+    transition: all 0.4s ease;
+}
+
+
+.toggle-btn .icon,
+.toggle-btn .icons,
+#icons-prev {
+    font-size: 70px;
+    height: 100px;
+    max-height: 100px;
+    width: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #474747;
+    background-color: #fff;
+    transform: translateX(10%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
+.toggle-btn .icon {
+    scale: 0.95;
+    /* opacity: 0.5; */
+}
+
+.toggle-btn .icons {
+    transform: translateX(calc(100% + (-10px)));
+    z-index: 1;
+    background-color: transparent;
+    color: #fff;
+}
+
+#icons-prev {
+    position: absolute;
+    z-index: 1;
+    transform: translateX(19%);
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    scale: 0.5;
+}
+
+#icons-next {
+    /* position: absolute; */
+    transform: translateX(109%);
+    scale: 0.8;
+}
+
+.toggle-btn.active {
+    background: #4c442c;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, .5);
+}
+
+.toggle-btn.toggle-btn.active .icon {
+    transform: translateX(calc(100% + 100px));
+    color: #4c442c;
+}
+
+.video-containerku video {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+}
